@@ -1,0 +1,28 @@
+﻿@model _247_Benchmark.Models.BibleModel
+@{
+    ViewBag.Title = "Search Result";
+}
+
+<h2>Search Results</h2>
+
+@if (Model != null)
+{
+    <h2>Result Found:</h2>
+}
+
+else
+{
+    <h2>Verse Not Found</h2>
+    @Html.ActionLink("Try Again", "../Bible/Search")
+}
+<div>
+
+    @if (Model != null)
+    {
+        <p style="font-weight: bold">@Model.bookName @Model.chapterNo:@Model.verseNo (@Model.testament Testament)</p>
+        <p>@Model.verse</p>
+
+        @Html.ActionLink("Back", "../Bible/Search")
+    }
+</div>
+

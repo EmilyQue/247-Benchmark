@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BibleModelStoreContainer" CdmEntityContainer="BibleEntities">
+    <EntitySetMapping Name="Bibles">
+      <EntityTypeMapping TypeName="BibleModel.Bible">
+        <MappingFragment StoreEntitySet="Bible">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="testament" ColumnName="testament" />
+          <ScalarProperty Name="book" ColumnName="book" />
+          <ScalarProperty Name="chapter" ColumnName="chapter" />
+          <ScalarProperty Name="verseNo" ColumnName="verseNo" />
+          <ScalarProperty Name="verse" ColumnName="verse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

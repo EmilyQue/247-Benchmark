@@ -1,0 +1,66 @@
+﻿@model _247_Benchmark.Models.BibleModel
+@{
+    ViewBag.Title = "Add Verse";
+}
+
+<h2>Add Verse</h2>
+
+@using (Html.BeginForm("createVerse", "Bible", FormMethod.Post))
+{
+<div class="form-horizontal">
+    <h4>Add a Bible Verse: </h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.testament, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.testament, new { htmlAttributes = new { placeholder = "New or Old", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.testament, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.bookName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.bookName, new { htmlAttributes = new { placeholder = "Genesis or Exodus", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.bookName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.chapterNo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.chapterNo, new { htmlAttributes = new { placeholder = "1-5", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.chapterNo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.verseNo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.verseNo, new { htmlAttributes = new { placeholder = "1-5", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.verseNo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.verse, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.verse, new { htmlAttributes = new { placeholder = "Verse", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.verse, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Add" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+

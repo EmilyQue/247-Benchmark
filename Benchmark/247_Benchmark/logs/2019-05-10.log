@@ -1,0 +1,11 @@
+2019-05-10 13:55:04.8564INFOEntering BibleController.Index()
+2019-05-10 13:55:15.5558INFOEntering BibleController.Search()
+2019-05-10 13:55:19.1879INFOEntering BibleController.Index()
+2019-05-10 13:55:25.1287INFOEntering BibleController.Search()
+2019-05-10 13:58:11.8815INFOEntering BibleController.Index()
+2019-05-10 13:58:39.8189INFOEntering BibleController.createVerse()
+2019-05-10 13:58:42.6361INFOExiting BibleController.createVerse() with entry success
+2019-05-10 13:58:44.2715INFOEntering BibleController.Index()
+2019-05-10 13:58:45.1591INFOEntering BibleController.Search()
+2019-05-10 13:58:51.7931INFOEntering BibleController.findVerse()
+2019-05-10 13:58:51.8131INFOExiting BibleController.createVerse() with search success

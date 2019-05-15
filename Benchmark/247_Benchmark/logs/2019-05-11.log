@@ -1,0 +1,16 @@
+2019-05-11 13:26:30.9802INFOEntering BibleController.Search()
+2019-05-11 13:26:38.6597INFOEntering BibleController.findVerse()
+2019-05-11 13:26:41.2657INFOExiting BibleController.createVerse() with search success
+2019-05-11 13:27:59.9153INFOEntering BibleController.Search()
+2019-05-11 13:28:27.7443INFOEntering BibleController.findVerse()
+2019-05-11 13:28:27.7702INFOExiting BibleController.createVerse() with search success
+2019-05-11 13:28:29.3678INFOEntering BibleController.Search()
+2019-05-11 13:28:35.4970INFOEntering BibleController.findVerse()
+2019-05-11 13:28:35.4970INFOExiting BibleController.createVerse() with search fail
+2019-05-11 13:28:36.7884INFOEntering BibleController.Search()
+2019-05-11 13:28:43.4684INFOEntering BibleController.findVerse()
+2019-05-11 13:28:43.4684INFOExiting BibleController.createVerse() with search success
+2019-05-11 13:28:45.1924INFOEntering BibleController.Search()
+2019-05-11 13:28:51.3782INFOEntering BibleController.findVerse()
+2019-05-11 13:28:51.3782INFOExiting BibleController.createVerse() with search success
+2019-05-11 13:28:52.9426INFOEntering BibleController.Search()
